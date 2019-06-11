@@ -1,10 +1,10 @@
-def my_collect(collection)
+def my_collect(array)
   i = 0
-  collection = []
-  collection.each do |i|
-  while i < collection.length
-  collection << yield(collection[i])
+  new_array = []
+  array.each do |i|
+  while i < array.length
+  new_array << yield(array[i])
   i += 1
   end
-  collection
+  new_array
 end
